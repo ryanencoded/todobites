@@ -26,3 +26,8 @@ dist-ssr
 # secrets
 .env
 *.env
+
+# Terraform
+
+terraform/.terraform
+terraform/.terraform.lock.*

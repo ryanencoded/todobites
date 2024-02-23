@@ -63,7 +63,7 @@ resource "aws_cloudfront_distribution" "app_distribution" {
   default_root_object = "index.html"
 
   comment = "${var.project_name} for ${var.environment}"
-  # aliases = ["www.${var.domain_name}"]
+  aliases = ["www.${var.domain_name}"]
 
   custom_error_response {
     error_code           = 403
@@ -107,8 +107,8 @@ resource "aws_cloudfront_distribution" "app_distribution" {
   }
 
   viewer_certificate {
-    # acm_certificate_arn = aws_acm_certificate.app_cert.arn
-    # ssl_support_method = "sni-only"
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.app_cert.arn
+    ssl_support_method = "sni-only"
+    # cloudfront_default_certificate = true
   }
 }
