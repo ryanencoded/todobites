@@ -4,6 +4,7 @@ resource "aws_s3_bucket" "app_bucket" {
   tags = {
     Environment = var.environment
     Client = var.client_name
+    Project = var.project_name
   }
 }
 

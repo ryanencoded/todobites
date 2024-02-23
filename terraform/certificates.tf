@@ -6,6 +6,8 @@ resource "aws_acm_certificate" "app_cert" {
 
   tags = {
     Environment = var.environment
+    Client = var.client_name
+    Project = var.project_name
   }
 
   lifecycle {

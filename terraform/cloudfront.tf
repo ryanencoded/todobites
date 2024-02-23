@@ -103,6 +103,7 @@ resource "aws_cloudfront_distribution" "app_distribution" {
   tags = {
     Environment = var.environment
     Client = var.client_name
+    Project = var.project_name
   }
 
   viewer_certificate {
