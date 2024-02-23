@@ -28,6 +28,6 @@ dist-ssr
 *.env
 
 # Terraform
-
 terraform/.terraform
 terraform/.terraform.lock.*
+*.tfstate
