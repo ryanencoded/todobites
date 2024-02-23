@@ -29,5 +29,6 @@ dist-ssr
 
 # Terraform
 terraform/.terraform
-terraform/.terraform.lock.*
-*.tfstate
+terraform/.terraform.lock.hcl
+terraform/.terraform.tfstate.*
+terraform/*.tfstate*
